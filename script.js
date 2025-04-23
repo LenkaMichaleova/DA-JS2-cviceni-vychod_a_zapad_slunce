@@ -4,6 +4,6 @@ const json = await response.json()
 console.log(json)
 
 document.body.innerHTML += `
-<p>Východ: ${data.results.astronomical_twilight_begin}</p>
-<p>Západ: ${data.results.astronomical_twilight_end}</p>
+<p>Východ: ${json.results.astronomical_twilight_begin}</p>
+<p>Západ: ${json.results.astronomical_twilight_end}</p>
 `
